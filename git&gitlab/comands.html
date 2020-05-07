@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Comandos de Git y Gitlab</title>
+</head>
+<body>
+	<!--Contenedor del menu-->
+    <div class="container-fluid p-0 pb-5">
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">My Comands</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                   <a class="nav-link" href="#">Git&Gitlab</a>
+                </li>
+            </ul>
+        </nav>
+	</div>
+	
+	<!--Contenedor del contenido-->
+    <div class="container pb-4">
+        <div class="display-4 pb-4">Comandos de Git y Gitlab</div>
+        <div class="row">
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git config</kbd> <span>&#187;</span> <samp>Muestra las opciones de configuracion. Parametros: <kbd>--list</kbd><span>&#187;</span> Muestra la configuracion por defecto de git, <kbd>--list --show-origin</kbd><span>&#187;</span> Muestra la ubicación de los archivos de configuración de git avanzada</samp>
+				</div>
+			</div>
+            <div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git init</kbd> <span>&#187;</span> <samp>Inicia el seguimiento de los cambios en una rama de archivos.</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git status</kbd> <span>&#187;</span> <samp>Muestra el estatus de los archivos nuevos o modificados en memoria de "Staging".</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git add</kbd> <span>&#187;</span> <samp>Agrega los archivos nuevos o modificados a la memoria de "Staging" (memoria chache), algunos de sus parametros pueden ser: <kbd>"archivo.txt"</kbd>, <kbd>.</kbd>, <kbd>-A</kbd>, <kbd>-am</kbd> (Agregar todos).</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git commit</kbd> <span>&#187;</span> <samp>Agrega los archivos a la memoria del disco duro, asignandole un identificador al/los archivo(s), usa como parametro
+						<kbd>-m + "descripcion"</kbd> para asignar una descripcion a los cambios realizados, de lo contrario se ejecutara el editor de texto de consola VIM. Otro parametro es
+						<kbd>-a</kbd> que nos permite agregar el archivo a la memora de staging (<kbd>git add</kbd>) y luego editarlo en VIM. Tambien se puede hacer uso de ambos parametros <kbd>-am + "descripcion"</kbd>.</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git log</kbd> <span>&#187;</span> <samp>Muestra todo el historial de cambios en la rama especifica (HEAD). el parametro <kbd>--stat</kbd> ofrece otros detalles</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git show</kbd> <span>&#187;</span> <samp>Muestra el texto del archivo que ha sido modificado.</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git branch</kbd> <span>&#187;</span> <samp>Muestra todas las ramas de trabajo y donde se encuentra ubicado.</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git rm --cached + "archivo"</kbd> <span>&#187;</span> <samp>Elimina el archivo de la memoria de staying(RAM) para ser anadido.</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git rm --force + "archivo"</kbd> <span>&#187;</span> <samp>Elimina el archivo de la memoria de staying(RAM) y del directorio donde fue creado antes de ser comentado.</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git reset</kbd> <span>&#187;</span> <samp><kbd>HEAD</kbd> Elimina los archivos de la memoria de staying(RAM) para luego ser anadidos. Otros parametros <kbd>--soft</kbd> Borra todo el historial y los registros de Git pero guardamos los cambios que tengamos en Staging, así podemos aplicar las últimas actualizaciones a un nuevo commit. <kbd>--hard</kbd> Borra todo. Todo todito, absolutamente todo. Toda la información de los commits y del área de staging se borra del historial.</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git diff + "idcommit1(viejo)" "idcommit2(nuevo)"</kbd> <span>&#187;</span> <samp>Compara los cambios que han ocurrido en un archivo (tomar en cuenta el orden).</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git checkout</kbd> <span>&#187;</span> <samp> Nos permite viajar en el tiempo utilizando como parametro los "idcommit", tambien nos permite cambiar de rama de trabajo asignando como parametro el "nombre de la rama"</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git clone + "URL"</kbd> <span>&#187;</span> <samp> Nos permite clonar un repositorio remoto.</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git push</kbd> <span>&#187;</span> <samp>Luego de hacer <kbd>git add</kbd> y <kbd>git commit</kbd> debemos ejecutar este comando para mandar los cambios al servidor remoto.</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git fetch</kbd> <span>&#187;</span> <samp>Lo usamos para traer actualizaciones del servidor remoto y guardarlas en nuestro repositorio local (en caso de que hayan, por supuesto).</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git merge + "nombre de la rama"</kbd> <span>&#187;</span> <samp>También usamos el comando git fetch con servidores remotos. Lo necesitamos para combinar los últimos cambios del servidor remoto y nuestro directorio de trabajo. Se debe utilizar estando en la rama principal (master) para ejecutarlo.</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git pull</kbd> <span>&#187;</span> <samp>Básicamente, <kbd>git fetch</kbd> y <kbd>git merge</kbd> al mismo tiempo.</samp>
+				</div>
+			</div>
+        </div>
+	</div>
+
+	<!--Terminologia de Git y Gitlab-->
+	<div class="container-fluid">
+		<div class="display-4">Terminologia de Git</div>
+		<div class="row">
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<ul>
+						<li><b>Archivos Tracked</b>: Son los archivos que viven dentro de Git, no tienen cambios pendientes y sus últimas actualizaciones han sido guardadas en el repositorio gracias a los comandos git add y git commit. </li>
+						<li><b>Archivos Staged</b>: Son archivos en Staging. Viven dentro de Git y hay registro de ellos porque han sido afectados por el comando git add, aunque no sus últimos cambios. Git ya sabe de la existencia de estos últimos cambios, pero todavía no han sido guardados definitivamente en el repositorio porque falta ejecutar el comando git commit. </li>
+						<li><b>Archivos Unstaged</b>: Entiéndelos como archivos “Tracked pero Unstaged”. Son archivos que viven dentro de Git pero no han sido afectados por el comando git add ni mucho menos por git commit. Git tiene un registro de estos archivos, pero está desactualizado, sus últimas versiones solo están guardadas en el disco duro. </li>
+						<li><b>Archivos Untracked</b>: Son archivos que NO viven dentro de Git, solo en el disco duro. Nunca han sido afectados por git add, así que Git no tiene registros de su existencia.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
