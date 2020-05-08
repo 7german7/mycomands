@@ -25,7 +25,7 @@
         <div class="row">
 			<div class="col-12">
 				<div class="alert alert-secondary">
-					<kbd>git config</kbd> <span>&#187;</span> <samp>Muestra las opciones de configuracion. Parametros: <kbd>--list</kbd><span>&#187;</span> Muestra la configuracion por defecto de git, <kbd>--list --show-origin</kbd><span>&#187;</span> Muestra la ubicación de los archivos de configuración de git avanzada</samp>
+					<kbd>git config</kbd> <span>&#187;</span> <samp>Muestra las opciones de configuracion. Banderas: <kbd>--list</kbd><span>&#187;</span> Muestra la configuracion por defecto de git, <kbd>--list --show-origin</kbd><span>&#187;</span> Muestra la ubicación de los archivos de configuración de git avanzada</samp>
 				</div>
 			</div>
             <div class="col-12">
@@ -40,14 +40,14 @@
 			</div>
 			<div class="col-12">
 				<div class="alert alert-secondary">
-					<kbd>git add</kbd> <span>&#187;</span> <samp>Agrega los archivos nuevos o modificados a la memoria de "Staging" (memoria chache), algunos de sus parametros pueden ser: <kbd>"archivo.txt"</kbd>, <kbd>.</kbd>, <kbd>-A</kbd>, <kbd>-am</kbd> (Agregar todos).</samp>
+					<kbd>git add</kbd> <span>&#187;</span> <samp>Agrega los archivos nuevos o modificados a la memoria de "Staging" (memoria chache), algunas de sus banderas pueden ser: <kbd>"archivo.txt"</kbd>, <kbd>.</kbd>, <kbd>-A</kbd>, <kbd>-am</kbd> (Agregar todos).</samp>
 				</div>
 			</div>
 			<div class="col-12">
 				<div class="alert alert-secondary">
 					<kbd>git commit</kbd> <span>&#187;</span> <samp>Agrega los archivos a la memoria del disco duro, asignandole un identificador al/los archivo(s), usa como parametro
 						<kbd>-m + "descripcion"</kbd> para asignar una descripcion a los cambios realizados, de lo contrario se ejecutara el editor de texto de consola VIM. Otro parametro es
-						<kbd>-a</kbd> que nos permite agregar el archivo a la memora de staging (<kbd>git add</kbd>) y luego editarlo en VIM. Tambien se puede hacer uso de ambos parametros <kbd>-am + "descripcion"</kbd>.</samp>
+						<kbd>-a</kbd> que nos permite agregar el archivo a la memora de staging (<kbd>git add</kbd>) y luego editarlo en VIM. Tambien se puede hacer uso de ambas banderas <kbd>-am + "descripcion"</kbd>.</samp>
 				</div>
 			</div>
 			<div class="col-12">
@@ -77,7 +77,7 @@
 			</div>
 			<div class="col-12">
 				<div class="alert alert-secondary">
-					<kbd>git reset</kbd> <span>&#187;</span> <samp><kbd>HEAD</kbd> Elimina los archivos de la memoria de staying(RAM) para luego ser anadidos. Otros parametros <kbd>--soft</kbd> Borra todo el historial y los registros de Git pero guardamos los cambios que tengamos en Staging, así podemos aplicar las últimas actualizaciones a un nuevo commit. <kbd>--hard</kbd> Borra todo. Todo todito, absolutamente todo. Toda la información de los commits y del área de staging se borra del historial.</samp>
+					<kbd>git reset</kbd> <span>&#187;</span> <samp><kbd>HEAD</kbd> Elimina los archivos de la memoria de staying(RAM) para luego ser anadidos. Otras banderas <kbd>--soft</kbd> Borra todo el historial y los registros de Git pero guardamos los cambios que tengamos en Staging, así podemos aplicar las últimas actualizaciones a un nuevo commit. <kbd>--hard</kbd> Borra todo. Todo todito, absolutamente todo. Toda la información de los commits y del área de staging se borra del historial.</samp>
 				</div>
 			</div>
 			<div class="col-12">
@@ -115,6 +115,52 @@
 					<kbd>git pull</kbd> <span>&#187;</span> <samp>Básicamente, <kbd>git fetch</kbd> y <kbd>git merge</kbd> al mismo tiempo.</samp>
 				</div>
 			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git remote add origin “URL(HTTPS)”</kbd> <span>&#187;</span> <samp>Nos permite asignar una url de origen (Github) del proyecto o repositorio remoto a nuestro repositorio local (Git).</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git remote</kbd>
+					<span>&#187;</span>
+					<samp>Una vez asignada la URL de origen este comando nos muestra “origin”. </br>
+						Banderas: </br>
+						<kbd>-v</kbd>
+						<span>&#187;</span>
+						Nos permite ver la URL contenida en origin.
+					</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git push origin master</kbd>
+					<span>&#187;</span>
+					<samp>Nos pide autenticacion del usuario romoto en Github, si el login es correcto nos envia nuestros cambios o modificaciones realizadas en el repositorio local al repositorio remoto a una rama especifica, en este caso: master. </br>
+					</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git pull origin master</kbd>
+					<span>&#187;</span>
+					<samp>Nos permite actualizar o fusionar nuestro repositorio local junto con el repositorio remoto. En ocaciones debemos utilizar la bandera: </br>
+						<kbd>--alow-unrelated-histories</kbd> <span>&#187;</span> Nos permite fusionar el historial de cambios (remoto-local). </br>
+					</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>ssh-keygen -t rsa -b 4096 -C "ejemplo@email.com"</kbd>
+					<span>&#187;</span>
+					<samp>Ubicados en el directorio principal “Home / ~”, este comando nos permite crear una llave SSH.</br>
+						Banderas: </br>
+						<kbd>-t</kbd> <span>&#187;</span> Nos permite seleccionar el algoritmo que deseamos utilizar. </br>
+						<kbd>-b</kbd> <span>&#187;</span> Seleccionamos la complejidad desde una perspectiva matematica (curso de algoritmos) de la llave. </br>
+						<kbd>-C</kbd> <span>&#187;</span> Nos permite asignar un correo electrónico (Debe coincidir con el que se esta usando en Github).
+					</samp>
+				</div>
+			</div>
         </div>
 	</div>
 
@@ -129,6 +175,11 @@
 						<li><b>Archivos Staged</b>: Son archivos en Staging. Viven dentro de Git y hay registro de ellos porque han sido afectados por el comando git add, aunque no sus últimos cambios. Git ya sabe de la existencia de estos últimos cambios, pero todavía no han sido guardados definitivamente en el repositorio porque falta ejecutar el comando git commit. </li>
 						<li><b>Archivos Unstaged</b>: Entiéndelos como archivos “Tracked pero Unstaged”. Son archivos que viven dentro de Git pero no han sido afectados por el comando git add ni mucho menos por git commit. Git tiene un registro de estos archivos, pero está desactualizado, sus últimas versiones solo están guardadas en el disco duro. </li>
 						<li><b>Archivos Untracked</b>: Son archivos que NO viven dentro de Git, solo en el disco duro. Nunca han sido afectados por git add, así que Git no tiene registros de su existencia.</li>
+						<li><b>Raw</b>: Muestra el código plano del archivo.</li>
+						<li><b>Blame</b>: Muestra los usuarios responsables de los cambios en los archivos.</li>
+						<li><b>History</b>: Muestra el historial de cambios del archivo (git log).</li>
+						<li><b>Passphrase</b>: Cuando vamos a asignar una contrsena para las Claves SSH debemos agregar espacios.</li>
+						<li><b>SSH</b>: Secure Shell.</li>
 					</ul>
 				</div>
 			</div>
