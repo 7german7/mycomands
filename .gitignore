@@ -1,4 +1,5 @@
 *.odt
 *.pdf
 *.txt
+*.odt#
 results/
