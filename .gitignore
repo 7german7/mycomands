@@ -1,5 +1,5 @@
 *.odt
 *.pdf
 *.txt
-*.odt#
+.~lock.apuntes.odt#
 results/
