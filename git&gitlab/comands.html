@@ -118,7 +118,20 @@
 			</div>
 			<div class="col-12">
 				<div class="alert alert-secondary">
-					<kbd>git push</kbd> <span>&#187;</span> <samp>Luego de hacer <kbd>git add</kbd> y <kbd>git commit</kbd> debemos ejecutar este comando para mandar los cambios al servidor remoto.</samp>
+					<kbd>git push</kbd>
+					<span>&#187;</span>
+					<samp>
+						Luego de hacer <kbd>git add</kbd> y <kbd>git commit</kbd> debemos ejecutar este comando para mandar los cambios al servidor remoto.
+					</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git push origin "nombre de la rama"</kbd>
+					<span>&#187;</span>
+					<samp>
+						Publicar una rama local al repositorio remoto.
+					</samp>
 				</div>
 			</div>
 			<div class="col-12">
@@ -194,7 +207,8 @@
 				<div class="alert alert-secondary">
 					<kbd>ssh-add "ruta donde se guardan las claves SSH"</kbd>
 					<span>&#187;</span>
-					<samp>Agrega como identidad nuestra llave privada. </br>
+					<samp>
+						Agrega como identidad nuestra llave privada. </br>
 					</samp>
 				</div>
 			</div>
@@ -202,7 +216,44 @@
 				<div class="alert alert-secondary">
 					<kbd>git remote set-url origin "URL-SSH"</kbd>
 					<span>&#187;</span>
-					<samp>Nos permite cambiar nuestra URL de origen del repositorio en la configuracion de git, recordando que debemos estar dentro de la carpeta del proyecto. Si los archivos de llaves publicas tienen contrasena nos pedira colocarlas. </br>
+					<samp>
+						Nos permite cambiar nuestra URL de origen del repositorio en la configuracion de git, recordando que debemos estar dentro de la carpeta del proyecto. Si los archivos de llaves publicas tienen contrasena nos pedira colocarlas. </br>
+					</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git tag -a "nombre del tag" "id del-commit"</kbd>
+					<span>&#187;</span>
+					<samp>
+						Crear un nuevo tag y asignarlo a un commit.
+					</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git tag </kbd> o <kbd> git show-ref --tags</kbd>
+					<span>&#187;</span>
+					<samp>
+						Lista los tags de nuestro repositorio local.
+					</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git push origin --tags</kbd>
+					<span>&#187;</span>
+					<samp>
+						Publicar un tag en el repositorio remoto.
+					</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>git tag -d "nombre del tag" </kbd> o <kbd> git push origin :refs/tags/nombre-del-tag</kbd>
+					<span>&#187;</span>
+					<samp>
+						Borrar un tag del repositorio remoto.
 					</samp>
 				</div>
 			</div>
@@ -225,6 +276,7 @@
 						<li><b>History</b>: Muestra el historial de cambios del archivo (git log).</li>
 						<li><b>Passphrase</b>: Cuando vamos a asignar una contrsena para las Claves SSH debemos agregar espacios.</li>
 						<li><b>SSH</b>: Secure Shell.</li>
+						<li><b>gitk:</b>: Entorno Grafico de git (Se debe instalar).</li>
 					</ul>
 				</div>
 			</div>

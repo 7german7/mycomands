@@ -36,8 +36,36 @@
 					<kbd>alias + "comando largo"</kbd> <span>&#187;</span> <samp>Nos asigna un alias a un comando especifico que querramos recordar con otro nombre. </br>
 					</samp>
 				</div>
-            </div>
-        </div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>ssh-keygen -t rsa -b 4096 -C "ejemplo@email.com"</kbd>
+					<span>&#187;</span>
+					<samp>Ubicados en el directorio principal “Home / ~”, este comando nos permite crear una llave SSH.</br>
+						Banderas: </br>
+						<kbd>-t</kbd> <span>&#187;</span> Nos permite seleccionar el algoritmo que deseamos utilizar. </br>
+						<kbd>-b</kbd> <span>&#187;</span> Seleccionamos la complejidad desde una perspectiva matematica (curso de algoritmos) de la llave. </br>
+						<kbd>-C</kbd> <span>&#187;</span> Nos permite asignar un correo electrónico (Debe coincidir con el que se esta usando en Github).
+					</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>eval $(ssh-agent -s)</kbd>
+					<span>&#187;</span>
+					<samp>Evalua si el proceso esta en ejecucion y retorna el PID (Process ID) </br>
+					</samp>
+				</div>
+			</div>
+			<div class="col-12">
+				<div class="alert alert-secondary">
+					<kbd>ssh-add "ruta donde se guardan las claves SSH"</kbd>
+					<span>&#187;</span>
+					<samp>Agrega como identidad nuestra llave privada. </br>
+					</samp>
+				</div>
+			</div>
+		</div>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
